@@ -37,7 +37,7 @@
 
 	</head>
 	<div class="backbuttonimliterallyonlyusingthisclassforthatxd">
-	<a href = "index.html"> &larr; Back</a>
+	<a href = "index.html"> &larr; Back to Main</a>
 </div>
 	<br>
 	<br>
@@ -50,6 +50,7 @@
 			<h1>SATIRE CLICKBAIT ARTICLES!!!!!!! THE GOVERNMENT HATES THEM!!!!!!!!</h1>
 		</div>
 		<br>
+		<p>i'm sorry</p>
 		<br>
 		<br>
 		<br>
@@ -67,6 +68,8 @@
 			<br>
 			<div class="body">
 			<a href="https://i.kym-cdn.com/photos/images/newsfeed/000/002/941/Duckroll.jpg?1243959393">YOU <b>MUST</b> DO THIS ONE PHONE TRICK BEFORE BED!!!!!!!</a>
+			<button id="button2" type="button" onclick="SC2onclick();" >Open</button>
+			<p id="article2"></p>
 			</div>
 		
 
@@ -79,7 +82,10 @@
 	<script>
 		var item = document.getElementById("article1");
 		var item2 = document.getElementById("button1");
+		var item3 = document.getElementById("article2");
+		var item4 = document.getElementById("button2");
 		var openq = false;
+		var openq2 = false;
 		function SC1onclick() {
 		//	console.log(item.innerText);
 			
@@ -93,9 +99,24 @@ item2.innerText = "Close";
 item.innerText = "";
 item2.innerText = "Open";
 }
+		};
+		
 
+
+		function SC2onclick() {
+		//	console.log(item.innerText);
+			
+			openq2 = !openq2;
+			console.log(openq2);
+			if(openq2) {
+
+	item3.innerText = "This trick was silenced by the government, so I might be shut down soon. READ WHILE YOU CAN!! To help your phone, you must charge it. You may already be doing that, but an instagram user by the name of Carl000 on instagram discovered this trick when he frustratingly didn't charge his phone. He then woke up and did productive shit unlike you, and developed a secret technique. Now, this is very complicated, so bear with me. This is life-changing. \n 1. Get Skittles. \n \n This may seem stupid, but it is a vital step. They have special acids that react with electricity in a way i will get on with later. \n \n \n 2. Water. \n \n This has hydrogen which does [CONTAMINATED     OBLITERATED     DIMINISHED] \n \n \n ############################ \n \n THIS ARTICLE HAS BEEN SEIZED BY THE NATIONAL SECURITY AGENCY OF THE UNITED STATES OF AMERICA. \n \n HAVE A GOOD DAY IDIOT I ONLY INTERRUPTED THIS ARTICLE CUS I WAS BORED XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD \n \n \n \n \n im just tired honestly";
+item4.innerText = "Close";
+} else {
+item3.innerText = "";
+item4.innerText = "Open";
+}
 		};
 		
 	</script>
 </html>
- 
