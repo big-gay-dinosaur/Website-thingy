@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="just satire clickbaitey articles lol ">
+		<meta name="description" content="just satire clickbaitey articles lol">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 		
@@ -60,63 +60,85 @@
 		<div class="body">
 			
 			<a href="https://i.kym-cdn.com/photos/images/newsfeed/000/002/941/Duckroll.jpg?1243959393" >THIS ONE WOMAN USED THIS NEW TRICK TO SAVE THOUSANDS!!!!!!!! FISH LOVE HER!!!!!!</a>
-			 <button id="button1" type="button" onclick="if(open) {SC1onclick();} else {SC1onclick2();};" >Open</button>
-			 <p id="article1"></p>
+			<button id = "fuck" class="button" type="button" onclick="SC1onclick(this);" >Open</button>
+			 <p id="asjd" class="article"></p>
 				</div>
 			<br>
 			<br>
 			<br>
 			<div class="body">
 			<a href="https://i.kym-cdn.com/photos/images/newsfeed/000/002/941/Duckroll.jpg?1243959393">YOU <b>MUST</b> DO THIS ONE PHONE TRICK BEFORE BED!!!!!!!</a>
-			<button id="button2" type="button" onclick="SC2onclick();" >Open</button>
-			<p id="article2"></p>
+			<button id="bitch" class="button" type="button" onclick="SC1onclick(this);" >Open</button>
+			<p class="article"></p>
 			</div>
-		
+			
+			<br>
+			<br>
+			<br>
+			<div class="body">
+			
+				<a href="https://i.kym-cdn.com/photos/images/newsfeed/000/002/941/Duckroll.jpg?1243959393" > waffles are dope</a>
+				<button id = "fuaasdck" class="button" type="button" onclick="SC1onclick(this);" >Open</button>
+				 <p id="asjdsfs" class="article"></p>
+					</div>
 
 
 
 
-			<p>this was made by the big gay dinosaur xd</p>
+			<p>From Big Gay Dinosaur</p>
 	</body>
 
 	<script>
-		var item = document.getElementById("article1");
-		var item2 = document.getElementById("button1");
-		var item3 = document.getElementById("article2");
-		var item4 = document.getElementById("button2");
-		var openq = false;
-		var openq2 = false;
-		function SC1onclick() {
-		//	console.log(item.innerText);
-			
-			openq = !openq;
-			console.log(openq);
-			if(openq) {
+		var articles = [];
+		articles = document.getElementsByClassName("article");
+		var buttons = [];
+		buttons = document.getElementsByClassName("button");
+		var articleContents = [];
+		articleContents[0] = "You'd never expect this answer, so just hold tight. Don't die. But, in 2004, she discovered something very interesting. This woman, is Carol Ina. Carol was riding to work on her bike one day, when she decided to feed the fish. She gave them bread. Now, she worked as a teacher. Teaching is expensive. She now makes no money but also spends thousands less feeding the fish instead. She's now the resident crazy lady.";
+		articleContents[1] = "This trick was silenced by the government, so I might be shut down soon. READ WHILE YOU CAN!! To help your phone, you must charge it. You may already be doing that, but an instagram user by the name of Carl000 on instagram discovered this trick when he frustratingly didn't charge his phone. He then woke up and did productive shit unlike you, and developed a secret technique. Now, this is very complicated, so bear with me. This is life-changing. <br> 1. Get Skittles. <br><br> This may seem stupid, but it is a vital step. They have special acids that react with electricity in a way i will get on with later. <br><br><br>2. Water. <br><br> This has hydrogen which does [CONTAMINATED     OBLITERATED     DIMINISHED] <br><br><br> ############################ <br><br> THIS ARTICLE HAS BEEN SEIZED BY THE NATIONAL SECURITY AGENCY OF THE UNITED STATES OF AMERICA. <br><br> HAVE A GOOD DAY IDIOT I ONLY INTERRUPTED THIS ARTICLE CUS I WAS BORED XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD <br><br><br><br><br> im just tired honestly";
+		articleContents[2] = "H<br>U<br>M<br>A<br>N<br><br>O<br>N<br>E<br>";
+		var openq = [];
+		for(var i = 0; i < articles.length; i++) {
+			openq[i] = false;
+		}
+		function SC1onclick(index) {
+//			buttons.indexOf(index);
 
-item.innerText = "You'd never expect this answer, so just hold tight. Don't die. But, in 2004, she discovered something very interesting. This woman, is Carol Ina. Carol was riding to work on her bike one day, when she decided to feed the fish. She gave them bread. Now, she worked as a teacher. Teaching is expensive. She now makes no money but also spends thousands less feeding the fish instead. She's now the resident crazy lady.";
-item2.innerText = "Close";
-} else {
-item.innerText = "";
-item2.innerText = "Open";
-}
-		};
+		 	for(var i = 0; i < buttons.length; i++) {
+				 
+					console.log("button[i] id " + buttons[i].id);
+					console.log("index id: " + index.id);
+					console.log("i is " + i);
+					if(buttons[i].id == index.id) {
+						console.log("ids match(id is " + i + ")");
+						console.log("i is " + i);
+						idOfElement = i;
+					}
+
+		 }
+		 openq[idOfElement] = !openq[idOfElement];
+		 console.log("story of elemntid: " + articleContents[idOfElement]);
+		 console.log("what i ksajldjal: " + articles[idOfElement].innerHTML);
+		 if(openq[idOfElement]) {
+			 articles[idOfElement].innerHTML = articleContents[idOfElement];
+			 buttons[idOfElement].innerHTML = "Close";
+		 console.log("what i ksajldjal: " + articles[idOfElement].innerHTML);
+		
+		 } else {
+			 articles[idOfElement].innerHTML = "";
+			 buttons[idOfElement].innerHTML = "Open";
+		 } 
+		}
+		//if(openq[index]) {
+		//articles[index].innerHTML = articleContents[index];
+		//}
+
+
+		
+	
+
 		
 
 
-		function SC2onclick() {
-		//	console.log(item.innerText);
-			
-			openq2 = !openq2;
-			console.log(openq2);
-			if(openq2) {
-
-	item3.innerText = "This trick was silenced by the government, so I might be shut down soon. READ WHILE YOU CAN!! To help your phone, you must charge it. You may already be doing that, but an instagram user by the name of Carl000 on instagram discovered this trick when he frustratingly didn't charge his phone. He then woke up and did productive shit unlike you, and developed a secret technique. Now, this is very complicated, so bear with me. This is life-changing. \n 1. Get Skittles. \n \n This may seem stupid, but it is a vital step. They have special acids that react with electricity in a way i will get on with later. \n \n \n 2. Water. \n \n This has hydrogen which does [CONTAMINATED     OBLITERATED     DIMINISHED] \n \n \n ############################ \n \n THIS ARTICLE HAS BEEN SEIZED BY THE NATIONAL SECURITY AGENCY OF THE UNITED STATES OF AMERICA. \n \n HAVE A GOOD DAY IDIOT I ONLY INTERRUPTED THIS ARTICLE CUS I WAS BORED XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD \n \n \n \n \n im just tired honestly";
-item4.innerText = "Close";
-} else {
-item3.innerText = "";
-item4.innerText = "Open";
-}
-		};
-		
 	</script>
 </html>
